@@ -6,8 +6,8 @@ def _get_pdf_url_patch(links) -> str:
     Should only be called once for a given `Result`, in its constructor.
     After construction, the URL should be available in `Result.pdf_url`.
     """
-    pdf_urls = [link.href for link in links if "pdf" in link.href]
-    #pdf_urls = [link.href for link in links]
+    #pdf_urls = [link.href for link in links if "pdf" in link.href]
+    pdf_urls = [link.href for link in links]
 
 
     if len(pdf_urls) == 0:
